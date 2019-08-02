@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5ECA639B327B086376B444 /* Pods_DismissDisposse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7A4DA5B7E940F0A24868D4 /* Pods_DismissDisposse.framework */; };
 		B0788FB222F4780D0011CC7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0788FB122F4780D0011CC7E /* AppDelegate.swift */; };
 		B0788FB422F4780D0011CC7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0788FB322F4780D0011CC7E /* ViewController.swift */; };
 		B0788FB722F4780D0011CC7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0788FB522F4780D0011CC7E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B7144073ACA44EB03C65386 /* Pods-DismissDisposse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DismissDisposse.debug.xcconfig"; path = "Target Support Files/Pods-DismissDisposse/Pods-DismissDisposse.debug.xcconfig"; sourceTree = "<group>"; };
 		B0788FAE22F4780D0011CC7E /* DismissDisposse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DismissDisposse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0788FB122F4780D0011CC7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0788FB322F4780D0011CC7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		B0788FB822F4780E0011CC7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0788FBB22F4780E0011CC7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0788FBD22F4780E0011CC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DACDF32EA7926EDFDCEB36 /* Pods-DismissDisposse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DismissDisposse.release.xcconfig"; path = "Target Support Files/Pods-DismissDisposse/Pods-DismissDisposse.release.xcconfig"; sourceTree = "<group>"; };
+		FF7A4DA5B7E940F0A24868D4 /* Pods_DismissDisposse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DismissDisposse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5ECA639B327B086376B444 /* Pods_DismissDisposse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78BAB11ABF402806069CA3F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B7144073ACA44EB03C65386 /* Pods-DismissDisposse.debug.xcconfig */,
+				C4DACDF32EA7926EDFDCEB36 /* Pods-DismissDisposse.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89B58D422E6A614A64EC0AA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF7A4DA5B7E940F0A24868D4 /* Pods_DismissDisposse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0788FA522F4780D0011CC7E = {
 			isa = PBXGroup;
 			children = (
 				B0788FB022F4780D0011CC7E /* DismissDisposse */,
 				B0788FAF22F4780D0011CC7E /* Products */,
+				78BAB11ABF402806069CA3F5 /* Pods */,
+				89B58D422E6A614A64EC0AA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0788FC022F4780E0011CC7E /* Build configuration list for PBXNativeTarget "DismissDisposse" */;
 			buildPhases = (
+				2EE980AF40D12145037DB4DD /* [CP] Check Pods Manifest.lock */,
 				B0788FAA22F4780D0011CC7E /* Sources */,
 				B0788FAB22F4780D0011CC7E /* Frameworks */,
 				B0788FAC22F4780D0011CC7E /* Resources */,
+				8ED63177BEFED65B0AA85F5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EE980AF40D12145037DB4DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DismissDisposse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED63177BEFED65B0AA85F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DismissDisposse/Pods-DismissDisposse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DismissDisposse/Pods-DismissDisposse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DismissDisposse/Pods-DismissDisposse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0788FAA22F4780D0011CC7E /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		B0788FC122F4780E0011CC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7144073ACA44EB03C65386 /* Pods-DismissDisposse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		B0788FC222F4780E0011CC7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DACDF32EA7926EDFDCEB36 /* Pods-DismissDisposse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

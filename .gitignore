@@ -1,0 +1,15 @@
+Pods/
+*.xcworkspacedata
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+.pbxuser
+!default.pbxuser
+xcuserdata/
+.moved-aside
+.xccheckout
+.xcscmblueprint
+.build/

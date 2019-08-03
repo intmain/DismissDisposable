@@ -7,14 +7,37 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+  
+  let showModalButton: UIButton = UIButton(type: .system)
+  let disposeBag: DisposeBag = DisposeBag()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    view.addSubview(showModalButton)
+    view.backgroundColor = UIColor.white
+    showModalButton.setTitle("show modal", for: .normal)
+    bind()
+  }
+  
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    showModalButton.sizeToFit()
+    showModalButton.center = view.center
+  }
+  
+  func bind() {
+    showModalButton.rx.tap
+      .flatMap { [weak self] _ in
+        return ModalViewController.create(parent: self)
+      }
+      .subscribe(onNext: { [weak self] text in
+        self?.showModalButton.setTitle(text, for: .normal)
+      })
+      .disposed(by: disposeBag)
+  }
 }
 

@@ -8,5 +8,6 @@ target 'DismissDisposse' do
   # Pods for DismissDisposse
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxOptional'
   
 end
